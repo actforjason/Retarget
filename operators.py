@@ -13232,8 +13232,8 @@ class AddRootMotion(Operator):
 
 
 classes = (
-	 ActionRangeToScene,
-     ActionNlaRangeToScene,
+	 # ActionRangeToScene,
+     # ActionNlaRangeToScene,
      AdjustAnimation,
 	 ConstraintStatus,
 	 SelectConstrainedControls,

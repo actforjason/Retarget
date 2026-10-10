@@ -1684,8 +1684,8 @@ def register_classes():
     bpy.types.VIEW3D_MT_pose_context_menu.append(pose_context_options)
     bpy.types.VIEW3D_MT_object_context_menu.append(pose_context_options)
     bpy.types.VIEW3D_MT_armature_context_menu.append(armature_context_options)
-    bpy.types.DOPESHEET_HT_header.append(action_header_buttons)
-    bpy.types.GRAPH_HT_header.append(action_header_buttons)
+    # bpy.types.DOPESHEET_HT_header.append(action_header_buttons)
+    # bpy.types.GRAPH_HT_header.append(action_header_buttons)
     bpy.types.NLA_MT_editor_menus.append(action_nla_header_buttons)
 
 
@@ -1694,8 +1694,8 @@ def unregister_classes():
     bpy.types.VIEW3D_MT_pose_context_menu.remove(pose_context_options)
     bpy.types.VIEW3D_MT_object_context_menu.remove(pose_context_options)
     bpy.types.VIEW3D_MT_armature_context_menu.remove(armature_context_options)
-    bpy.types.DOPESHEET_HT_header.remove(action_header_buttons)
-    bpy.types.GRAPH_HT_header.remove(action_header_buttons)
+    # bpy.types.DOPESHEET_HT_header.remove(action_header_buttons)
+    # bpy.types.GRAPH_HT_header.remove(action_header_buttons)
     bpy.types.NLA_MT_editor_menus.remove(action_nla_header_buttons)
     
     for cls in reversed(classes):
