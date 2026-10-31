@@ -310,7 +310,8 @@ def get_globals(context):
             for fcurve_index, fcurve in enumerate(fcurves_list):
                 locked = is_fcurve_locked(obj, fcurve)
                 if not locked:
-                    fcurve.select = True
+                    if utils.curve.are_frames_selected_in_fcurve(fcurve):
+                        fcurve.select = True
                 else:
                     fcurve.select = False
                     for keyframe in fcurve.keyframe_points:
